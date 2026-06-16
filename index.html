@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomBoard - Project Management Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <h2>🌸 BloomBoard</h2>
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="pages/dashboard.html">📊 Dashboard</a>
+
+        <a href="pages/projects.html">📁 Projects</a>
+
+        <a href="pages/team.html">👥 Team</a>
+
+        <a href="pages/analytics.html">📈 Analytics</a>
+
+        <a href="pages/calendar.html">📅 Calendar</a>
+
+        <a href="pages/settings.html">⚙ Settings</a>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- HERO SECTION -->
+
+        <div class="hero-banner">
+
+            <div class="hero-content">
+
+                <h1>🌸 BloomBoard</h1>
+
+                <h2>Smart Project & Team Management Platform</h2>
+
+                <p>
+                    Organize projects, manage deadlines,
+                    track progress, and collaborate with your team efficiently.
+                </p>
+
+                <button class="hero-btn">
+                    Get Started
+                </button>
+
+            </div>
+
+            <img src="assets/banner.jpg" alt="Banner" class="hero-image">
+
+        </div>
+
+        <!-- FEATURES -->
+
+        <div class="feature-section">
+
+            <div class="feature-card">
+                <h3>📋 Task Tracking</h3>
+                <p>Manage daily tasks and project milestones.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📅 Calendar</h3>
+                <p>Monitor deadlines and important events.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>👥 Team Collaboration</h3>
+                <p>Work together with project members.</p>
+            </div>
+
+        </div>
+
+        <!-- DASHBOARD -->
+
+        <div class="dashboard-card">
+
+            <h1>🚀 Project Management Dashboard</h1>
+
+            <div class="form">
+
+                <input type="text" id="project" placeholder="Project Name">
+
+                <input type="text" id="task" placeholder="Task Name">
+
+                <input type="date" id="deadline">
+
+                <select id="priority">
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+                </select>
+
+                <button onclick="addTask()">Add Task</button>
+
+            </div>
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <h3>Total Tasks</h3>
+                    <span id="totalTasks">0</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Completed</h3>
+                    <span id="completedTasks">0</span>
+                </div>
+
+            </div>
+
+            <div id="taskList"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
